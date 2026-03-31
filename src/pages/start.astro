@@ -1,0 +1,161 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start Your Quest - 11+ Prep</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎮 Start Your 11+ Quest</h1>
+      <p>Choose your starting point:</p>
+      
+      <div class="options">
+        <a href="/maths" class="option-card">
+          <div class="icon">📐</div>
+          <h3>Maths</h3>
+          <p>Solve problems, crack codes, unlock levels</p>
+        </a>
+        
+        <a href="/english" class="option-card">
+          <div class="icon">📚</div>
+          <h3>English</h3>
+          <p>Grammar memes, comprehension quests, vocabulary challenges</p>
+        </a>
+        
+        <a href="/verbal-reasoning" class="option-card">
+          <div class="icon">🔤</div>
+          <h3>Verbal Reasoning</h3>
+          <p>Word puzzles, logic challenges, pattern recognition</p>
+        </a>
+        
+        <a href="/non-verbal-reasoning" class="option-card">
+          <div class="icon">🔷</div>
+          <h3>Non-Verbal Reasoning</h3>
+          <p>Shape puzzles, spatial awareness, visual patterns</p>
+        </a>
+      </div>
+      
+      <div class="progress-section">
+        <h2>Already have an account?</h2>
+        <a href="/login" class="btn-primary">Continue Your Quest</a>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  :root {
+    --primary: #6366f1;
+    --secondary: #f43f5e;
+    --dark: #1e293b;
+    --light: #f8fafc;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    min-height: 100vh;
+    padding: 2rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+  }
+
+  .options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .option-card {
+    background: white;
+    color: var(--dark);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  .icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .option-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .option-card p {
+    color: #64748b;
+  }
+
+  .progress-section {
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .progress-section h2 {
+    margin-bottom: 1rem;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: white;
+    color: var(--primary);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .options {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
